@@ -44,7 +44,7 @@ function Home() {
   ];
 */
   useEffect(() => {
-    fetch('https://mymoviz-backend-zeta-one.vercel.app/routes/index/movies')
+    fetch('https://mymoviz-backend-zeta-one.vercel.app/index/movies')
       .then(response => response.json())
       .then(data => {
         const formatedData = data.movies.map(movie => {
